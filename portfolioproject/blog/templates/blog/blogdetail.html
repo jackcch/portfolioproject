@@ -1,0 +1,9 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+    <div class="container text-center">
+        <h1>This is blog Detail page</h1>
+        <h2>{{blog.blogtitle}}</h2>
+        <h5>{{blog.blogdate}}</h5>
+        <p>{{blog.blogcontent}}</p>
+    </div>
+{% endblock %}
