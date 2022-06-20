@@ -1,0 +1,26 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container center-text">
+        <h3>This is a survey form</h3>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="useremail">Email</label>
+                <input type="email" class="form-control" id="useremail" placeholder="input email address" required>    
+                <br><label for="username">Name</label>
+                <input type="text" class="form-control" id="username" maxlength="70" placeholder="Input Name Here">
+                <fieldset class="form-group">
+                    <legend>Sex</legend>
+                    <label class="form-check">
+                        <input type="radio" class="form-check-input" id="male" name="sex">Male
+                    </label>
+                    <label class="form-check">
+                        <input type="radio" class="form-check-input" id="female" name="sex">Female
+                    </label>
+                </fieldset>
+                <br><input type="submit" class="form-control btn btn-primary" value="Submit">
+            </div>
+        </form>
+    </div>
+{% endblock %}

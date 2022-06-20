@@ -9,9 +9,8 @@
         <Title>Game of Thrones Fansite</Title>
     </head>
     <body>
-        <div class="container center-text">
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+              <div class="container fluid">
               <a class="navbar-brand" href="#">Game of Thrones Fansite</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,6 +22,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'blog:allblogs' %}">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'sform:survey' %}">Survey</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,8 +47,7 @@
                 </form>
               </div>
             </div>
-          </nav>
-        </div>
+        </nav>
         {% block content%}
         {% endblock %}
     </body>
